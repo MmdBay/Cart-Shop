@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'Vazir-FD';
+  src: url('../webfonts/Vazir-FD.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #d6d6d6;
+  font-family: 'Vazir-FD';
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1fd7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #276fb3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0084ff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #1f1f1fd7;
+  z-index: 1;
+}
+
+.navbar-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  direction: rtl;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: #276fb3;
+}
+
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #276fb3;
+  padding: 0 5px;
+  border-radius: 30%;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 0.7em 1.7em;
+  font-size: 1rem;
+  background: #276fb3;
+  color: #ffffff;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 3.4em 0 0 rgb(63, 63, 63) inset;
+}
+.products {
+  padding: 4rem 0;
+  direction: rtl;
+  background-color: #252525;
+}
+
+.section-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  letter-spacing: 0.1rem;
+  color: #276fb3;
+}
+
+.products-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 318px;
+  border-radius: 4px;
+}
+
+.bag-btn {
+  position: absolute;
+  top: 85%;
+  right: 0;
+  width: 100%;
+  background: #276fb3;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0.3rem 0;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+.bag-btn:hover {
+  box-shadow: 0.2em 3.4em 0.2em 0 rgb(63, 63, 63) inset;
+}
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+
+.product-img {
+  display: block;
+  width: 100%;
+  min-height: 12rem;
+  transition: 0.3s;
+}
+.product-img:hover {
+  transform: scale(1.2);
+}
+
+.product {
+  direction: rtl;
+}
+
+.product h3 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #276fb3;
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+.cart-overlay {
+  position: fixed;
+  
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.3s linear;
+  background: rgba(0, 0, 0, 0.521);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 3;
+  background: #1f1f1fd7;
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+}
+
+.close-cart {
+  color: #276fb3;
+}
+
+.showCart {
+  transform: translateX(0);
+}
+
+.transparentBcg {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.cart h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cart-content {
+  direction: rtl;
+}
+
+.cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cart-item img {
+  width: 75px;
+  height: 75px;
+}
+
+.cart-item h4 {
+  font-size: 0.85rem;
+}
+
+.cart-item h5 {
+  margin: 0.5rem 0;
+}
+
+.item-amount {
+  text-align: center;
+}
+
+.remove-item {
+  color: #757575;
+  cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  color: #276fb3;
+  cursor: pointer;
+}
+
+.cart-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cart-footer h3 {
+  margin-bottom: 1rem;
+}

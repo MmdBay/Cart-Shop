@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "محصول اول",
+        "price": 750000,
+        "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "محصول دوم",
+        "price": 2900000,
+        "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "محصول سوم",
+        "price": 729000,
+        "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "محصول چهارم",
+        "price": 990000,
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "محصول پنجم",
+        "price": 490000,
+        "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "محصول ششم",
+        "price": 4590000,
+        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "محصول هفتم",
+        "price": 2990000,
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "محصول هشتم",
+        "price": 4000000,
+        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
+      }
+    }
+  ]
+}
